@@ -1,0 +1,478 @@
+[
+    {
+        "productId": 1,
+        "productName": "Ryzen Pre Built",
+        "description": "La mejor computadora en el mercado, cuenta con un ryzen 9 3950X, una RTX 3090, RAM a 4200Mhz y suficiente espacio para todo lo que necesites!",
+        "price": 200000,
+        "image": "img/product-imgs/ryzen-prebuilt-banner.png",
+        "tags": [
+            "prebuilt",
+            "ryzen",
+            "rtx",
+            "aorus",
+            "high-end"
+        ]
+    },
+    {
+        "productId": 101,
+        "productName": "Radeon RX 6900 XT",
+        "description": "La mejor tarjeta del mundo, con su arquitectura RDN2, sus 7nm, las frecuencias que llegan hasta los 2250Mhz y su bajo consumo de 300W la convierte en una excelente compra para una pc de gama super alta!",
+        "price": 200000,
+        "image": "img/product-imgs/gpu-banner.png",
+        "tags": [
+            "gpu",
+            "radeon",
+            "high-end"
+        ]
+    },
+    {
+        "productId": 102,
+        "productName": "Nvidia RTX 3090",
+        "description": "La mejor tarjeta grafica en el mercado.",
+        "price": 280000,
+        "image": "img/product-imgs/gpu-2.png",
+        "tags": [
+            "gpu",
+            "rtx",
+            "high-end"
+        ]
+    },
+    {
+        "productId": 1,
+        "productName": "Ryzen Pre Built",
+        "description": "La mejor computadora en el mercado, cuenta con un ryzen 9 3950X, una RTX 3090, RAM a 4200Mhz y suficiente espacio para todo lo que necesites!",
+        "price": 200000,
+        "image": "img/product-imgs/ryzen-prebuilt-banner.png",
+        "tags": [
+            "prebuilt",
+            "ryzen",
+            "rtx",
+            "aorus",
+            "high-end"
+        ]
+    },
+    {
+        "productId": 1,
+        "productName": "Ryzen Pre Built",
+        "description": "La mejor computadora en el mercado, cuenta con un ryzen 9 3950X, una RTX 3090, RAM a 4200Mhz y suficiente espacio para todo lo que necesites!",
+        "price": 200000,
+        "image": "img/product-imgs/ryzen-prebuilt-banner.png",
+        "tags": [
+            "prebuilt",
+            "ryzen",
+            "rtx",
+            "aorus",
+            "high-end"
+        ]
+    },
+    {
+        "productId": 1,
+        "productName": "Ryzen Pre Built",
+        "description": "La mejor computadora en el mercado, cuenta con un ryzen 9 3950X, una RTX 3090, RAM a 4200Mhz y suficiente espacio para todo lo que necesites!",
+        "price": 200000,
+        "image": "img/product-imgs/ryzen-prebuilt-banner.png",
+        "tags": [
+            "prebuilt",
+            "ryzen",
+            "rtx",
+            "aorus",
+            "high-end"
+        ]
+    },
+    {
+        "productId": 2,
+        "productName": "Ryzen 7",
+        "description": "Procesador ryzen 7 5800x, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 70000,
+        "image": "img/product-imgs/cpu-r7.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 2,
+        "productName": "Ryzen 7",
+        "description": "Procesador ryzen 7 5800x, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 70000,
+        "image": "img/product-imgs/cpu-r7.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 2,
+        "productName": "Ryzen 7",
+        "description": "Procesador ryzen 7 5800x, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 70000,
+        "image": "img/product-imgs/cpu-r7.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 2,
+        "productName": "Ryzen 7",
+        "description": "Procesador ryzen 7 5800x, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 70000,
+        "image": "img/product-imgs/cpu-r7.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 3,
+        "productName": "Ryzen 5",
+        "description": "Procesador ryzen 5 3600x, gran capacidad a un modico precio.",
+        "price": 40000,
+        "image": "img/product-imgs/cpu-r5.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 4,
+        "productName": "Intel Cpu I9",
+        "description": "Procesador intel i9, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 90000,
+        "image": "img/product-imgs/cpu-i9.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 5,
+        "productName": "Intel i7",
+        "description": "Procesador intel i7 12550-k, gran capacidad a un modico precio.",
+        "price": 80000,
+        "image": "img/product-imgs/cpu-intel-i7.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 6,
+        "productName": "Monitor Gamer",
+        "description": "Monitor de alta frecuencia y con una impecable fidelidad de color.",
+        "price": 40000,
+        "image": "img/product-imgs/screen-high-spec.png",
+        "tags": [
+            "screen"
+        ]
+    },
+    {
+        "productId": 7,
+        "productName": "Gabinete Vidrio Templado",
+        "description": "Gabinete impecable con una vista perfecta al contenido del mismo.",
+        "price": 40000,
+        "image": "img/product-imgs/case-3.png",
+        "tags": [
+            "case"
+        ]
+    },
+    {
+        "productId": 8,
+        "productName": "Fuente de Alimentacion 750W",
+        "description": "Necesaria para una build excelente y perfecta para gabinetes esteticos.",
+        "price": 40000,
+        "image": "img/product-imgs/psu-2.png",
+        "tags": [
+            "psu"
+        ]
+    },
+    {
+        "productId": 9,
+        "productName": "Motherboard",
+        "description": "La mejor motherboard que existe.",
+        "price": 40000,
+        "image": "img/product-imgs/mother.png",
+        "tags": [
+            "motherboard"
+        ]
+    },
+    {
+        "productId": 10,
+        "productName": "SSD",
+        "description": "La mejor de todas las SSDs",
+        "price": 40000,
+        "image": "img/product-imgs/ssd.jpg",
+        "tags": [
+            "storage"
+        ]
+    },
+    {
+        "productId": 3,
+        "productName": "Ryzen 5",
+        "description": "Procesador ryzen 5 3600x, gran capacidad a un modico precio.",
+        "price": 40000,
+        "image": "img/product-imgs/cpu-r5.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 4,
+        "productName": "Intel Cpu I9",
+        "description": "Procesador intel i9, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 90000,
+        "image": "img/product-imgs/cpu-i9.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 5,
+        "productName": "Intel i7",
+        "description": "Procesador intel i7 12550-k, gran capacidad a un modico precio.",
+        "price": 80000,
+        "image": "img/product-imgs/cpu-intel-i7.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 6,
+        "productName": "Monitor Gamer",
+        "description": "Monitor de alta frecuencia y con una impecable fidelidad de color.",
+        "price": 40000,
+        "image": "img/product-imgs/screen-high-spec.png",
+        "tags": [
+            "screen"
+        ]
+    },
+    {
+        "productId": 7,
+        "productName": "Gabinete Vidrio Templado",
+        "description": "Gabinete impecable con una vista perfecta al contenido del mismo.",
+        "price": 40000,
+        "image": "img/product-imgs/case-3.png",
+        "tags": [
+            "case"
+        ]
+    },
+    {
+        "productId": 8,
+        "productName": "Fuente de Alimentacion 750W",
+        "description": "Necesaria para una build excelente y perfecta para gabinetes esteticos.",
+        "price": 40000,
+        "image": "img/product-imgs/psu-2.png",
+        "tags": [
+            "psu"
+        ]
+    },
+    {
+        "productId": 9,
+        "productName": "Motherboard",
+        "description": "La mejor motherboard que existe.",
+        "price": 40000,
+        "image": "img/product-imgs/mother.png",
+        "tags": [
+            "motherboard"
+        ]
+    },
+    {
+        "productId": 10,
+        "productName": "SSD",
+        "description": "La mejor de todas las SSDs",
+        "price": 40000,
+        "image": "img/product-imgs/ssd.jpg",
+        "tags": [
+            "storage"
+        ]
+    },
+    {
+        "productId": 3,
+        "productName": "Ryzen 5",
+        "description": "Procesador ryzen 5 3600x, gran capacidad a un modico precio.",
+        "price": 40000,
+        "image": "img/product-imgs/cpu-r5.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 4,
+        "productName": "Intel Cpu I9",
+        "description": "Procesador intel i9, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 90000,
+        "image": "img/product-imgs/cpu-i9.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 5,
+        "productName": "Intel i7",
+        "description": "Procesador intel i7 12550-k, gran capacidad a un modico precio.",
+        "price": 80000,
+        "image": "img/product-imgs/cpu-intel-i7.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 6,
+        "productName": "Monitor Gamer",
+        "description": "Monitor de alta frecuencia y con una impecable fidelidad de color.",
+        "price": 40000,
+        "image": "img/product-imgs/screen-high-spec.png",
+        "tags": [
+            "screen"
+        ]
+    },
+    {
+        "productId": 7,
+        "productName": "Gabinete Vidrio Templado",
+        "description": "Gabinete impecable con una vista perfecta al contenido del mismo.",
+        "price": 40000,
+        "image": "img/product-imgs/case-3.png",
+        "tags": [
+            "case"
+        ]
+    },
+    {
+        "productId": 8,
+        "productName": "Fuente de Alimentacion 750W",
+        "description": "Necesaria para una build excelente y perfecta para gabinetes esteticos.",
+        "price": 40000,
+        "image": "img/product-imgs/psu-2.png",
+        "tags": [
+            "psu"
+        ]
+    },
+    {
+        "productId": 9,
+        "productName": "Motherboard",
+        "description": "La mejor motherboard que existe.",
+        "price": 40000,
+        "image": "img/product-imgs/mother.png",
+        "tags": [
+            "motherboard"
+        ]
+    },
+    {
+        "productId": 10,
+        "productName": "SSD",
+        "description": "La mejor de todas las SSDs",
+        "price": 40000,
+        "image": "img/product-imgs/ssd.jpg",
+        "tags": [
+            "storage"
+        ]
+    },
+    {
+        "productId": 3,
+        "productName": "Ryzen 5",
+        "description": "Procesador ryzen 5 3600x, gran capacidad a un modico precio.",
+        "price": 40000,
+        "image": "img/product-imgs/cpu-r5.png",
+        "tags": [
+            "ryzen",
+            "cpu"
+        ]
+    },
+    {
+        "productId": 4,
+        "productName": "Intel Cpu I9",
+        "description": "Procesador intel i9, genial para juegos y actividades de uso extenso de cómputo.",
+        "price": 90000,
+        "image": "img/product-imgs/cpu-i9.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 5,
+        "productName": "Intel i7",
+        "description": "Procesador intel i7 12550-k, gran capacidad a un modico precio.",
+        "price": 80000,
+        "image": "img/product-imgs/cpu-intel-i7.png",
+        "tags": [
+            "cpu",
+            "intel"
+        ]
+    },
+    {
+        "productId": 6,
+        "productName": "Monitor Gamer",
+        "description": "Monitor de alta frecuencia y con una impecable fidelidad de color.",
+        "price": 40000,
+        "image": "img/product-imgs/screen-high-spec.png",
+        "tags": [
+            "screen"
+        ]
+    },
+    {
+        "productId": 7,
+        "productName": "Gabinete Vidrio Templado",
+        "description": "Gabinete impecable con una vista perfecta al contenido del mismo.",
+        "price": 40000,
+        "image": "img/product-imgs/case-3.png",
+        "tags": [
+            "case"
+        ]
+    },
+    {
+        "productId": 8,
+        "productName": "Fuente de Alimentacion 750W",
+        "description": "Necesaria para una build excelente y perfecta para gabinetes esteticos.",
+        "price": 40000,
+        "image": "img/product-imgs/psu-2.png",
+        "tags": [
+            "psu"
+        ]
+    },
+    {
+        "productId": 9,
+        "productName": "Motherboard",
+        "description": "La mejor motherboard que existe.",
+        "price": 40000,
+        "image": "img/product-imgs/mother.png",
+        "tags": [
+            "motherboard"
+        ]
+    },
+    {
+        "productId": 10,
+        "productName": "SSD",
+        "description": "La mejor de todas las SSDs",
+        "price": 40000,
+        "image": "img/product-imgs/ssd.jpg",
+        "tags": [
+            "storage"
+        ]
+    },
+    {
+        "productId": 12,
+        "productName": "Trident Skillz",
+        "description": "La mejor RAM de todas",
+        "price": 20000,
+        "image": "img/product-imgs/ram-banner.png",
+        "tags": [
+            "ram"
+        ]
+    },
+    {
+        "productId": 12,
+        "productName": "Trident Skillz",
+        "description": "La mejor RAM de todas",
+        "price": 20000,
+        "image": "img/product-imgs/ram-banner.png",
+        "tags": [
+            "ram"
+        ]
+    }
+]

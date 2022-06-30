@@ -1,0 +1,198 @@
+/* Complete styling */
+.content, .product-page, .cart-page {
+    padding-top: 8rem;
+}
+
+.tools {
+    align-content: center;
+}
+
+footer hr, footer .container a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .container p, footer .container p a {
+    font-size: smaller;
+    padding: 0;
+}
+
+.feature-img {
+    width: 400px!important;
+    height: 400px!important;
+}
+
+.lead {
+    font-size: large!important;
+}
+
+.card-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Carousel */
+.carousel-caption {
+    padding: 2px 0 8px 0!important;
+    margin-bottom: 2px!important;
+    border-radius: 20px;
+    max-height: 100px;
+    background: rgb(61,58,65);
+    background: radial-gradient(circle, rgba(61,58,65,0.8785889355742297) 15%, rgba(32,51,48,0.8673844537815126) 67%, rgba(33,29,56,0.8281687675070029) 100%);
+}
+
+.carousel-caption * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller!important;
+    margin-bottom: 5px!important;
+    font-weight: 300!important;
+}
+
+.case-img, .screen-img, .prebuilt-img {
+    padding-left: 10%;
+} 
+
+.gpu-img, .cpu-img, .case-img, .ram-img {
+    padding-left: 30%;
+}
+
+/* Links and font size */
+* {
+    font-size: clamp(0.9rem, 0.75rem + 0.4vw, 4rem)
+}
+
+a {
+    text-decoration: none;
+}
+
+a.navbar-brand {
+    width: 70px;
+    height: 70px;
+}
+
+a.navbar-brand * {
+    padding-top: 10px;
+    width: 76px;
+    height: 78px;
+}
+
+.text-end {
+    padding-top: 1.4em;
+}
+
+/*-- About page --*/
+
+
+.article {
+    margin-top: 8em;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.article .container, footer .container p {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: smaller;
+}
+
+/*============= MEDIA QUERIES =============*/
+
+/* Small devices */
+@media only screen and (max-width: 768px){
+    .carousel-caption * {
+        font-size: medium!important;
+    }
+    .carousel-item img {
+        padding-left: 0!important;
+        width: 100%;
+    }
+    .product-page, .cart-page {
+        padding-top: 20em;
+    }
+    .content {
+        padding-top: 18rem;
+    }
+    .article {
+        padding-top: 10em;
+    }
+}
+
+/* Carousel */
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    .card {
+        aspect-ratio: 2.5;
+        width: 100%;
+    }
+    #productsCarousel {
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-inner,
+    .carousel-item {
+        height: 100%;
+    }
+}
+
+/* Switch toggle style change */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 41px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6E6E6E;
+    border: 1px solid black;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: black;
+    border: 1px solid white;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 0 3px #ffc107;
+}
+
+input:checked+.slider:before {
+    transform: translateX(19px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

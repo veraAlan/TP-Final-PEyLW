@@ -1,0 +1,36 @@
+body.light-theme {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    background-color: #EEEBDD;
+}
+
+.content.light-theme {
+    background-color: #D8B6A4;
+}
+
+.fg-light {
+    background-color: #f7e7de!important;
+}
+
+.bg-lg-light {
+    background-color: rgba(var(--bs-gray-100), 1)!important;
+}
+
+.gray-200 {
+    background-color: rgba(var(--bs-gray-200), 1)!important;
+}
+
+.gray-300 {
+    background-color: rgba(var(--bs-gray-300), 1)!important;
+}
+
+.card-bg-light {
+    background-color: #F2D7D9;
+    color: #F2D7D9;
+}
+
+.card-bg-text-light {
+    background-color: #D3CEDF;
+    color: #D3CEDF;
+}

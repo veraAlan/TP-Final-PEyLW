@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-dark.css" />
+    <link rel="stylesheet" href="css/style-light.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- JS -->
+    <script type="text/javascript" src="js/user.js"></script>
+    <script type="text/javascript" src="js/themeToggler.js"></script>
+    <script type="text/javascript" src="js/productLoader.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/030b0c9fc7.js" crossorigin="anonymous"></script>
+    <title>Mini Core Arg</title>
+</head>
+
+<body class="dark-theme" onloadstart="productsMain();carousel3Items();">
+    <!-- Header (Dark Default) -->
+    <header class="p-1 bg-dark fixed-top">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="logo" />
+                </a>
+                <!-- Info + Site Config -->
+                <ul class="nav col-9 col-sm-auto me-sm-auto mb-2 justify-content-center mb-sm-0">
+                    <li>
+                        <a class="nav-link px-1 text-light" href="about.html">Quiénes Somos?</a>
+                        <a class="nav-link px-1 text-light"
+                           href="mailto:cryssal220799@gmail.com">contact@minicore.com</a>
+                    </li>
+                    <!-- Theme switch -->
+                    <li class="nav-link px-1">
+                        <label class="switch">
+                            <input checked type="checkbox" class="switch-theme" />
+                            <span class="slider round" onclick="toggle()"></span>
+                        </label>
+                    </li>
+                </ul>
+                <!-- User Account -->
+                <div class="text-end">
+                    <button type="button" class="btn me-3 btn-outline-light" id="login"
+                            data-bs-toggle="dropdown" aria-expanded="false">Ingresar</button>
+                    <div class="dropdown-menu bg-dark text-light" aria-labelledby="login">
+                        <form class="px-4 py-3">
+                            <div class="mb-3">
+                                <label for="formEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="formEmail"
+                                       placeholder="email@ejemplo.com" onchange="validEmail(this)">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formPassword" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="formPassword"
+                                       placeholder="Contraseña" onchange="validPass(this)">
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                    <label class="form-check-label" for="dropdownCheck">Recordarme</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                    </div>
+                    <a href="registration.html"><button type="button"
+                                class="btn me-3 btn-warning">Registrarse</button></a>
+                    <a href="cart.html"><button type="button" class="btn btn-outline-light">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button></a>
+                </div>
+            </div>
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-sm p-0 bg-dark">
+                <div class="navbar-collapse" id="toggle-content">
+                    <!-- Dropdown Menu -->
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="product.html?type=prebuilt">PCs
+                                pre-armadas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" id="dropdown"
+                               data-bs-toggle="dropdown" aria-expanded="false" href="#">Componentes</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown">
+                                <li><a class="dropdown-item" href="product.html?type=motherboard">Placa
+                                        Madre</a></li>
+                                <li><a class="dropdown-item" href="product.html?type=cpu">CPU</a></li>
+                                <li><a class="dropdown-item" href="product.html?type=gpu">GPU</a></li>
+                                <li><a class="dropdown-item" href="product.html?type=ram">RAM</a></li>
+                                <li><a class="dropdown-item"
+                                       href="product.html?type=storage">Almacenamiento</a>
+                                </li>
+                                <li><a class="dropdown-item" href="product.html?type=psu">Fuente de
+                                        Alimentacion</a></li>
+                                <li><a class="dropdown-item" href="product.html?type=case">Gabinete</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Registration form -->
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class=" col-12 col-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration bg-dark text-light"
+                     style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="mb-4 pb'0 pb-md-0 mb-md-5">Registrate</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <input type="text" id="firstName" class="form-control form-control"
+                                               placeholder="Juanito" onchange="validName(this)" />
+                                        <label class="form-label" for="firstName">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <input type="text" id="lastName" class="form-control form-control"
+                                               placeholder="Rockefeller" onchange="validName(this)" />
+                                        <label class="form-label" for="lastName">Apellido</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4 d-flex align-items-center">
+                                    <div class="form-outline">
+                                        <div class="datepicker">
+                                            <input type="date" class="form-control birthdayDate" id="bday"
+                                                   onchange="validDate(this)" />
+                                        </div>
+                                        <label class="form-label w-100" for="birthdayDate">Fecha de
+                                            Nacimiento</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <h6 class="mb-2 pb-1">Genero: </h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="genderOption"
+                                               id="femaleGender" value="f" checked />
+                                        <label class="form-check-label" for="femaleGender">Mujer</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="genderOption"
+                                               id="maleGender" value="m" />
+                                        <label class="form-check-label" for="maleGender">Hombre</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="genderOption"
+                                               id="otherGender" value="o" />
+                                        <label class="form-check-label" for="otherGender">Otro</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb'0">
+                                    <div class="form-outline">
+                                        <input type="email" id="email" class="form-control form-control"
+                                               placeholder="juanito.r@gmail.com"
+                                               onchange="validEmail(this)" />
+                                        <label class="form-label" for="emailAddress">Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 pb'0">
+                                    <input type="password" class="form-control form-control" id="formPassP"
+                                           placeholder="Contraseña" onchange="validPass(this)">
+                                    <label for="formPassword" class="form-label">Contraseña (Minimo 8
+                                        carácteres, al menos una letra y numero)</label>
+                                </div>
+                                <div class="col-md-6 mb-4 pb'0">
+                                    <div class="form-outline">
+                                        <input type="tel" id="phoneNumber" class="form-control form-control"
+                                               placeholder="+54 299 5234563" onchange="validPhone(this)" />
+                                        <label class="form-label" for="phoneNumber">Número de Teléfono</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4 pb'0">
+                                    <input type="password" class="form-control form-control"
+                                           id="formPassRepeat" placeholder="Contraseña">
+                                    <label for="formPassword" class="form-label"
+                                           onchange="validPass(this)">Repetir Contraseña</label>
+                                </div>
+                            </div>
+                            <a><button type="button" class="btn me-3 btn-warning"
+                                        onclick="registration()">Registrarse</button></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-1 bg-dark text-light">
+        <hr>
+        <div class="container">
+            <p>Copyright @ 2022 | Vera Alan: Github <a href="github.com/veraAlan">github.com/veraAlan</a></p>
+        </div>
+        <hr>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+body.dark-theme {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    background-color: #2C3639;
+}
+
+.content.dark-theme {
+    background-color: #3F4E4F;
+}
+
+.fg-dark {
+    background-color: #302e3d!important;
+}
+
+.bg-lg-dark {
+    background: rgb(63,78,79)!important;
+background: linear-gradient(135deg, rgba(63,78,79,1) 0%, rgba(71,93,95,1) 37%, rgba(220,215,201,1) 100%)!important;
+}
+
+.fg-lg-dark {
+    background-color: #DCD7C9!important;
+}
+
+.dark {
+    background-color: #041C32;
+    color: #041C32;
+}
+
+.dark-2 {
+    background-color: #04293A;
+    color: #04293A;
+}

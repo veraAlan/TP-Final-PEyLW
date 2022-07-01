@@ -73,39 +73,55 @@ async function loadProductCart() {
     const b = d.querySelector('body')
     const cartProductsCards = b.querySelector('.cart-page')
 
-    const requestURL = "./database/products.json"
-    const request = new Request(requestURL)
-    const response = await fetch(request)
-    const pDBText = await response.text()
-    const pDB = JSON.parse(pDBText)
+    if (localStorage.getItem('cart').length > 0) {
+        cart = localStorage.getItem('cart').split(',')
+        const requestURL = "./database/products.json"
+        const request = new Request(requestURL)
+        const response = await fetch(request)
+        const pDBText = await response.text()
+        const pDB = JSON.parse(pDBText)
 
-    cart = localStorage.getItem('cart').split(',')
+        console.log(pDB)
 
-    const productList = d.createElement('div')
-    productList.classList.add('row')
-    productList.classList.add('row-cols-1')
-    productList.classList.add('row-cols-md-3')
-    productList.classList.add('p-1')
+        cartTotal()
+        const productList = d.createElement('div')
+        productList.classList.add('row')
+        productList.classList.add('row-cols-1')
+        productList.classList.add('row-cols-md-3')
+        productList.classList.add('p-1')
 
-    cart.forEach(cartProduct => {
-        const product = pDB.find(product => product.productName == cartProduct)
-        productList.innerHTML += '<div class="col"><div class="card m-2 fg-dark">' +
-            '<img src="' + product.image + '" class="card-img-top" alt="' + product.productName + '">' +
-            '<div class="card-body">' +
-            '<h5 class="card-title text-light">' + product.productName + '</h5>' +
-            '<p class="card-text text-light">' + product.description + '</p>' +
-            '<h5 class="text-light"> AR$ ' + product.price + '</h5 ></div > ' +
-            '<div class="card-footer">' +
-            '<button type="button" class="btn me-3 btn-dark w-100" onclick="removeProduct(\'' + product.productName + '\', this)">Eliminar</button>' +
-            '</div></div></div>'
-        cartProductsCards.appendChild(productList)
-    })
+        cart.forEach(cartProduct => {
+            const product = pDB.find(product => product.productName == cartProduct)
+            productList.innerHTML += '<div class="col"><div class="card m-2 fg-dark">' +
+                '<img src="' + product.image + '" class="card-img-top" alt="' + product.productName + '">' +
+                '<div class="card-body">' +
+                '<h5 class="card-title text-light">' + product.productName + '</h5>' +
+                '<p class="card-text text-light">' + product.description + '</p>' +
+                '<h5 class="text-light"> AR$ ' + product.price + '</h5 ></div > ' +
+                '<div class="card-footer">' +
+                '<button type="button" class="btn me-3 btn-dark w-100" onclick="removeProduct(\'' + product.productName + '\', this)">Eliminar</button>' +
+                '</div></div></div>'
+            cartProductsCards.appendChild(productList)
+        })
+    } else {
+        const noProducts = d.createElement('div')
+        noProducts.classList.add('center-div')
+        noProducts.classList.add('hw-100')
+        noProducts.classList.add('pt-4')
+
+        noProducts.innerHTML += '<h1>No hay productos en el carrito.</h1>'
+        cartProductsCards.appendChild(noProducts)
+    }
 }
 
 // Cart functions
 function cartAddProducts(name) {
-    cart = localStorage.getItem('cart').split(',')
-    cart = [...cart, name]
+    if (localStorage.getItem('cart').length > 0) {
+        cart = localStorage.getItem('cart').split(',')
+        cart = [...cart, name]
+    } else {
+        cart = [name]
+    }
     localStorage.setItem('cart', cart)
 }
 
@@ -126,6 +142,12 @@ async function cartTotal() {
     })
 
     totalElement.innerHTML = "Total: AR$" + total
+}
+
+function clearCart() {
+    localStorage.setItem('cart', '')
+    window.location.replace("./index.html")
+    alert("Su carrito fue vaciado.")
 }
 
 function removeProduct(productName) {

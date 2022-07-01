@@ -27,91 +27,89 @@
 
 <body class="dark-theme" onload=";loadProductsType();">
     <!-- Header (Dark Default) -->
-    <header class="p-1 bg-dark fixed-top">
-        <div class="container">
-            <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
-                <!-- Logo -->
-                <a href="index.html" class="navbar-brand">
-                    <img src="img/logo.png" alt="logo" />
-                </a>
-                <!-- Info + Site Config -->
-                <ul class="nav col-9 col-sm-auto me-sm-auto mb-2 justify-content-center mb-sm-0">
-                    <li>
-                        <a class="nav-link px-1 text-light" href="about.html">Quiénes Somos?</a>
-                        <a class="nav-link px-1 text-light"
-                           href="mailto:cryssal220799@gmail.com">contact@minicore.com</a>
-                    </li>
-                    <!-- Theme switch -->
-                    <li class="nav-link px-1">
-                        <label class="switch">
-                            <input checked type="checkbox" class="switch-theme" />
-                            <span class="slider round" onclick="toggle()"></span>
-                        </label>
-                    </li>
-                </ul>
-                <!-- User Account -->
-                <div class="text-end">
-                    <button type="button" class="btn me-3 btn-outline-light" id="login"
-                            data-bs-toggle="dropdown" aria-expanded="false">Ingresar</button>
-                    <div class="dropdown-menu bg-dark text-light" aria-labelledby="login">
-                        <form class="px-4 py-3">
-                            <div class="mb-3">
-                                <label for="formEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="formEmail"
-                                       placeholder="email@ejemplo.com" onchange="validEmail(this)">
-                            </div>
-                            <div class="mb-3">
-                                <label for="formPassword" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="formPassword"
-                                       placeholder="Contraseña" onchange="validPass(this)">
-                            </div>
-                            <div class="mb-3">
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                                    <label class="form-check-label" for="dropdownCheck">Recordarme</label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Entrar</button>
-                        </form>
-                    </div>
-                    <a href="registration.html"><button type="button"
-                                class="btn me-3 btn-warning">Registrarse</button></a>
-                    <a href="cart.html"><button type="button" class="btn btn-outline-light">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button></a>
+  <header class="p-1 bg-dark fixed-top">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-center justify-content-md-start">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <!-- Info + Site Config -->
+        <ul class="nav col-9 col-sm-auto me-sm-auto mb-2 justify-content-center mb-sm-0">
+          <li>
+            <a class="nav-link px-1 text-light" href="about.html">Quiénes Somos?</a>
+            <a class="nav-link px-1 text-light" href="mailto:cryssal220799@gmail.com">contact@minicore.com</a>
+          </li>
+          <!-- Theme switch -->
+          <li class="nav-link px-1">
+            <label class="switch">
+              <input checked type="checkbox" class="switch-theme" />
+              <span class="slider round" onclick="toggle()"></span>
+            </label>
+          </li>
+        </ul>
+        <!-- User Account -->
+        <div class="text-end">
+          <button type="button" class="btn me-3 btn-outline-light" id="login" data-bs-toggle="dropdown"
+                  aria-expanded="false">Ingresar</button>
+          <div class="dropdown-menu bg-dark text-light" aria-labelledby="login">
+            <form class="px-4 py-3">
+              <div class="mb-3">
+                <label for="formEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="formEmail" placeholder="email@ejemplo.com"
+                       onchange="validEmail(this)">
+              </div>
+              <div class="mb-3">
+                <label for="formPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="formPassword" placeholder="Contraseña"
+                       onchange="validPass(this)">
+              </div>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                  <label class="form-check-label" for="dropdownCheck">Recordarme</label>
                 </div>
-            </div>
-            <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-sm p-0 bg-dark">
-                <div class="navbar-collapse" id="toggle-content">
-                    <!-- Dropdown Menu -->
-                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="product.html?type=prebuilt">PCs
-                                pre-armadas</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-light" id="dropdown"
-                               data-bs-toggle="dropdown" aria-expanded="false" href="#">Componentes</a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown">
-                                <li><a class="dropdown-item" href="product.html?type=motherboard">Placa
-                                        Madre</a></li>
-                                <li><a class="dropdown-item" href="product.html?type=cpu">CPU</a></li>
-                                <li><a class="dropdown-item" href="product.html?type=gpu">GPU</a></li>
-                                <li><a class="dropdown-item" href="product.html?type=ram">RAM</a></li>
-                                <li><a class="dropdown-item"
-                                       href="product.html?type=storage">Almacenamiento</a>
-                                </li>
-                                <li><a class="dropdown-item" href="product.html?type=psu">Fuente de
-                                        Alimentacion</a></li>
-                                <li><a class="dropdown-item" href="product.html?type=case">Gabinete</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="isAdmin()">Entrar</button>
+            </form>
+          </div>
+          <a href="registration.html"><button type="button"
+                    class="btn me-3 btn-warning">Registrarse</button></a>
+          <a href="cart.html"><button type="button" class="btn btn-outline-light">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button></a>
         </div>
-    </header>
+      </div>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-sm p-0 bg-dark">
+        <div class="navbar-collapse" id="toggle-content">
+          <!-- Dropdown Menu -->
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="product.html?type=prebuilt">PCs
+                pre-armadas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" id="dropdown" data-bs-toggle="dropdown"
+                 aria-expanded="false" href="#">Componentes</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdown">
+                <li><a class="dropdown-item" href="product.html?type=motherboard">Placa
+                    Madre</a></li>
+                <li><a class="dropdown-item" href="product.html?type=cpu">CPU</a></li>
+                <li><a class="dropdown-item" href="product.html?type=gpu">GPU</a></li>
+                <li><a class="dropdown-item" href="product.html?type=ram">RAM</a></li>
+                <li><a class="dropdown-item" href="product.html?type=storage">Almacenamiento</a>
+                </li>
+                <li><a class="dropdown-item" href="product.html?type=psu">Fuente de
+                    Alimentacion</a></li>
+                <li><a class="dropdown-item" href="product.html?type=case">Gabinete</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
     <div class="container product-page text-light">
     </div>

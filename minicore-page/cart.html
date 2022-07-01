@@ -25,7 +25,7 @@
     <title>Mini Core Arg</title>
 </head>
 
-<body class="dark-theme" onload="loadProductCart();cartTotal()">
+<body class="dark-theme" onload="loadProductCart()">
     <!-- Header (Dark Default) -->
     <header class="p-1 bg-dark fixed-top">
         <div class="container">
@@ -71,7 +71,7 @@
                                     <label class="form-check-label" for="dropdownCheck">Recordarme</label>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Entrar</button>
+                            <button type="submit" class="btn btn-primary" onclick="isAdmin()">Entrar</button>
                         </form>
                     </div>
                     <a href="registration.html"><button type="button"
@@ -116,8 +116,11 @@
     <div class="cart-page container text-light">
         <h1 class="text-light text-center pt-4">&gt;&gt; Carrito &lt;&lt;</h1>
         <h3 id="cartTotalPay" class="text-light text-center"></h3>
-
-
+        <div class="center-div">
+            <button type="button" class="btn btn-outline-light" onclick="clearCart()"><i
+                   class="fa-solid fa-cart-arrow-down"></i> Vaciar
+                Carrito <i class="fa-solid fa-cart-arrow-down"></i></button>
+        </div>
     </div>
 
     <footer class="footer mt-auto py-1 bg-dark text-light">

@@ -2,13 +2,13 @@
 async function registration() {
     const d = document;
     var valid = true;
-    var firstName = d.getElementById("firstName")
-    var lastName = d.getElementById("lastName")
-    var gender = d.querySelector('input[name="genderOption"]:checked')
-    var birthday = d.querySelector(".birthdayDate")
-    var email = d.getElementById("email")
-    var formPass = d.getElementById("formPass")
-    var phone = d.getElementById("phoneNumber")
+    const firstName = d.getElementById("firstName")
+    const lastName = d.getElementById("lastName")
+    const gender = d.querySelector('input[name="genderOption"]:checked')
+    const birthday = d.querySelector(".birthdayDate")
+    const email = d.getElementById("email")
+    const formPass = d.querySelector("#formPassP")
+    const phone = d.getElementById("phoneNumber")
 
     valid = validName(firstName) && valid
     valid = validName(lastName) && valid
@@ -18,28 +18,22 @@ async function registration() {
     valid = validPhone(phone) && valid
 
     if (valid) {
-        const requestURL = "./database/users.json"
-        const request = new Request(requestURL)
-        const response = await fetch(request)
-        const pDBText = await response.text()
-        var pDB = JSON.parse(pDBText)
-
-        var birthdayDate = birthday[0].value + "/" + birthday[1].value + "/" + birthday[2].value
-
         var newEntry = {
             "user": firstName.value,
             "surn": lastName.value,
             "pass": formPass.value,
             "email": email.value,
-            "bday": birthdayDate,
+            "bday": birthday.value,
             "gender": gender.value,
             "lastCart": []
         }
 
-
-
+        console.log("ended")
 
         localStorage.setItem('user', JSON.stringify(newEntry))
+
+        window.location.replace("./index.html")
+        alert("Su cuenta fue creada de forma correcta.")
     }
 }
 
@@ -82,6 +76,10 @@ function validEmail(input) {
     var valid = false
     valid = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(input.value)
     border(input, valid)
+    if (input.value == 'admin') {
+        valid = true;
+        border(input, valid)
+    }
     return valid
 }
 
@@ -117,7 +115,19 @@ function validPass(input = "") {
 
         return samePass
     } else {
-        border(input, /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(input.value))
+        if (input.value == 'admin') {
+            border(input, true)
+        } else {
+            border(input, /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(input.value))
+        }
+    }
+}
+
+function isAdmin() {
+    const email = document.querySelector('#formEmail')
+    const pass = document.querySelector('#formPassword')
+    if (email.value == 'admin' && pass.value == 'admin') {
+        alert("\nLogin successful to admin account.\nIngreso exitoso a la cuenta de admin.")
     }
 }
 

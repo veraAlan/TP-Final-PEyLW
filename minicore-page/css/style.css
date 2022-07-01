@@ -31,6 +31,16 @@ footer .container p, footer .container p a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.center-div {
+    display: grid;
+    justify-content: space-around;
+}
+
+.hw-100 {
+    width: 100%;
+    height: 66vh;
+}
+
 /* Carousel */
 .carousel-caption {
     padding: 2px 0 8px 0!important;

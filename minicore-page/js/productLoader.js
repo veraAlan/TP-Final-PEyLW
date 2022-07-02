@@ -150,6 +150,12 @@ function clearCart() {
     alert("Su carrito fue vaciado.")
 }
 
+function payCart() {
+    localStorage.setItem('cart', '')
+    window.location.replace("./index.html")
+    alert("Su carrito fue pagado con exito.")
+}
+
 function removeProduct(productName) {
     var index = cart.indexOf(productName)
     cart.splice(index, 1)
